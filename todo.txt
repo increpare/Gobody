@@ -1,0 +1,42 @@
+Pachinkgo
+
+DONE 0  : camera rotate with mouse or cursor keys
+DONE 0.5 : Move cursor within bounds with wsad
+DONE 1  : drop piece
+DONE 1.5: fall preview
+DONE 1.75 : highlight overlapping rods
+DONE 2  : detect end square
+DONE 3  : alternating turns
+DONE 4  : delete bad pieces
+DONE 5  : internal go board representation
+DONE 6  : atari capture detection
+DONE 7: on match, highlight match and end match
+7  : (AI?)
+DONE 8  : title screen
+DONE 9  : sfx
+10 : win/lose
+DONE 11 - background
+DONE 12 - second view that only renders board and stones, not rods
+audio for capture
+DONE audio for piece destroy
+hide 'quit' button in browser
+DOINE black plays first!
+DONE except in handicap
+DONE handicap mode
+drop stone effect
+new turn waiting time? (1 second?)
+preview of handicap setup
+save start menu settings
+
+alternating colours
+when you win delete all 'free' pieces (with particles?)
+
+pageup/down don't zoom
+
+credit http://www.benkyoustudio.com/
+
+
+
+SOUND PROCESSING PROTOCOL
+cmd+d is duiplicate
+-40 sensitivity clamp at start , -60 at end

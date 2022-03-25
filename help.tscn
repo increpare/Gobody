@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://theme.tres" type="Theme" id=1]
+[ext_resource path="res://credits.gd" type="Script" id=3]
+[ext_resource path="res://Fonts/パチンご_.svg" type="Texture" id=4]
+[ext_resource path="res://art/pachingo_logo.svg" type="Texture" id=5]
+[ext_resource path="res://Fonts/井碁.svg" type="Texture" id=6]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.497
+anchor_right = 0.5
+anchor_bottom = 0.497
+margin_left = 96.0
+margin_top = -299.2
+margin_right = 96.0
+margin_bottom = 299.8
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -608.0
+margin_top = 1.0
+margin_right = 416.0
+margin_bottom = 1.0
+color = Color( 0.592157, 0.607843, 0.270588, 1 )
+
+[node name="PachingoLogo" type="Sprite" parent="Control"]
+position = Vector2( 180, 154 )
+scale = Vector2( 0.968808, 0.968808 )
+texture = ExtResource( 5 )
+
+[node name="井碁" type="Sprite" parent="Control"]
+position = Vector2( 180, 383 )
+texture = ExtResource( 6 )
+
+[node name="パチンご" type="Sprite" parent="Control"]
+position = Vector2( 180, 531 )
+texture = ExtResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -588.0
+margin_top = 21.0
+margin_right = -66.0
+margin_bottom = -19.0
+size_flags_horizontal = 15
+size_flags_vertical = 15
+theme = ExtResource( 1 )
+text = "The player who captures first, wins.
+
+Cursor keys or mouse to move camera.
+PageUp/PageDown or scrollwheel to zoom.
+WSAD to move cursor
+Space to place stone
+
+[ Press SPACE or ESC to return to title screen ]"

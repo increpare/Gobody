@@ -1,0 +1,13 @@
+[gd_resource type="Environment" format=2]
+
+[resource]
+background_mode = 1
+background_color = Color( 0.592157, 0.607843, 0.270588, 1 )
+ambient_light_color = Color( 0.203922, 0.203922, 0.203922, 1 )
+tonemap_mode = 2
+tonemap_white = 6.0
+ss_reflections_depth_tolerance = 0.1
+ss_reflections_roughness = false
+dof_blur_far_distance = 525.72
+glow_intensity = 3.0
+glow_bloom = 0.45
