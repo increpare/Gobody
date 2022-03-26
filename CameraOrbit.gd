@@ -21,6 +21,8 @@ export var sensitivity_key:float=5
 
 export (NodePath) var target
 
+var zoomgesturestep:float =0.01
+
 # Private variables
 var _cam_target: Spatial = null
 var _cam: Camera
@@ -38,6 +40,7 @@ func _ready() -> void:
 
 
 func _input(event) -> void:		
+	#print (event.as_text())
 	if event is InputEventMouseMotion:
 		# Rotate the rig around the target
 		rotation.x = clamp(
@@ -63,6 +66,21 @@ func _input(event) -> void:
 			if event.button_index == BUTTON_WHEEL_DOWN and _cur_zoom < max_zoom:
 				_cur_zoom += zoom_step
 				cam_y_offset += zoom_y_step
+	if event is InputEventMagnifyGesture:
+		if event.factor>1 and _cur_zoom > min_zoom:
+			_cur_zoom -= zoom_step*zoomgesturestep*5
+			cam_y_offset -= zoom_y_step*zoomgesturestep*5
+		elif event.factor<1 and _cur_zoom < max_zoom:
+			_cur_zoom += zoom_step*zoomgesturestep*5
+			cam_y_offset += zoom_y_step*zoomgesturestep*5
+	if event is InputEventPanGesture:
+		if event.delta.y<-0.1 and _cur_zoom > min_zoom:
+			_cur_zoom -= zoom_step*zoomgesturestep*5
+			cam_y_offset -= zoom_y_step*zoomgesturestep*5
+		elif event.delta.y>0.1 and _cur_zoom < max_zoom:
+			_cur_zoom += zoom_step*zoomgesturestep*5
+			cam_y_offset += zoom_y_step*zoomgesturestep*5
+			
 
 
 func _process(delta) -> void:
