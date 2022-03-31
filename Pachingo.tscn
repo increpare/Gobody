@@ -1120,7 +1120,7 @@ material/0 = ExtResource( 26 )
 [node name="Rods" type="Spatial" parent="Board"]
 
 [node name="DiamondDart" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.0707107, 0.0707107, 0, -0.0707107, 0.0707107, 0.0145931, 3.99029, 3.99894 )
+transform = Transform( 5.27076, 0, 0, 0, 0.100972, 0, 0, 0, 0.100972, 0.0145931, 4.99029, 3.99894 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1134,7 +1134,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart2" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.0707107, 0.0707107, 0, -0.0707107, 0.0707107, 0.0145931, 3.99029, 1.99894 )
+transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 4.99029, 1.99894 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1148,7 +1148,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart3" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.0707107, 0.0707107, 0, -0.0707107, 0.0707107, 0.0145931, 3.99029, -0.00105607 )
+transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 4.99029, -0.00105607 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1162,7 +1162,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart4" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.0707107, 0.0707107, 0, -0.0707107, 0.0707107, 0.0145931, 3.99029, -2.00106 )
+transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 4.99029, -2.00106 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1176,7 +1176,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart5" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.0707107, 0.0707107, 0, -0.0707107, 0.0707107, 0.0145931, 3.99029, -4.00106 )
+transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 4.99029, -4.00106 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1190,7 +1190,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart6" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.0707107, 0.0707107, 0, -0.0707107, 0.0707107, 0.0145931, 1.99029, -3.00106 )
+transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 2.99029, -3.00106 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1204,7 +1204,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart7" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.0707107, 0.0707107, 0, -0.0707107, 0.0707107, 0.0145931, 1.99029, -1.00106 )
+transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 2.99029, -1.00106 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1218,7 +1218,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart8" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.0707107, 0.0707107, 0, -0.0707107, 0.0707107, 0.0145931, 1.99029, 0.998944 )
+transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 2.99029, 0.998944 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1232,7 +1232,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart9" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.0707107, 0.0707107, 0, -0.0707107, 0.0707107, 0.0145931, 1.99029, 2.99894 )
+transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 2.99029, 2.99894 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1246,7 +1246,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart10" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0.0707107, -0.0707107, 0, 0.0707107, 0.0707107, 5.22, 3.09086e-09, -3.09086e-09, -0.985407, 5.99029, -0.00105583 )
+transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, -0.985407, 6.99029, -0.00105583 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1260,7 +1260,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart11" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0.0707107, -0.0707107, 0, 0.0707107, 0.0707107, 5.22, 3.09086e-09, -3.09086e-09, -2.98541, 5.99029, -0.00105583 )
+transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, -2.98541, 6.99029, -0.00105583 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1274,7 +1274,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart12" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0.0707107, -0.0707107, 0, 0.0707107, 0.0707107, 5.22, 3.09086e-09, -3.09086e-09, 1.01459, 5.99029, -0.00105583 )
+transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, 1.01459, 6.99029, -0.00105583 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1288,7 +1288,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart13" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0.0707107, -0.0707107, 0, 0.0707107, 0.0707107, 5.22, 3.09086e-09, -3.09086e-09, 3.01459, 5.99029, -0.00105583 )
+transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, 3.01459, 6.99029, -0.00105583 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1302,7 +1302,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart14" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0.0707107, -0.0707107, 0, 0.0707107, 0.0707107, 5.22, 3.09086e-09, -3.09086e-09, 4.01459, 7.99029, -0.00105583 )
+transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, 4.01459, 8.99029, -0.00105583 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1316,7 +1316,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart15" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0.0707107, -0.0707107, 0, 0.0707107, 0.0707107, 5.22, 3.09086e-09, -3.09086e-09, 2.01459, 7.99029, -0.00105583 )
+transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, 2.01459, 8.99029, -0.00105583 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1330,7 +1330,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart16" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0.0707107, -0.0707107, 0, 0.0707107, 0.0707107, 5.22, 3.09086e-09, -3.09086e-09, 0.0145931, 7.99029, -0.00105583 )
+transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, 0.0145931, 8.99029, -0.00105583 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1344,7 +1344,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart17" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0.0707107, -0.0707107, 0, 0.0707107, 0.0707107, 5.22, 3.09086e-09, -3.09086e-09, -1.98541, 7.99029, -0.00105583 )
+transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, -1.98541, 8.99029, -0.00105583 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
@@ -1358,7 +1358,7 @@ transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
 [node name="DiamondDart18" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0.0707107, -0.0707107, 0, 0.0707107, 0.0707107, 5.22, 3.09086e-09, -3.09086e-09, -3.98541, 7.99029, -0.00105583 )
+transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, -3.98541, 8.99029, -0.00105583 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
