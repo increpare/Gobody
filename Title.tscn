@@ -190,3 +190,5 @@ anchor_bottom = 1.0
 margin_left = -10.0
 margin_right = -259.0
 color = Color( 0.364518, 0.378906, 0.0695648, 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

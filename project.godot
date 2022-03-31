@@ -20,10 +20,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Platformer 3D"
-config/description="Platformer 3D demo using a KinematicBody.
-It uses similar code to the 2D platformer, but implemented in 3D.
-It also features audio reverberation (it sounds echo-y)."
+config/name="Pachingo"
+config/description="Silly Go/Pachinko mashup"
 run/main_scene="res://Title.tscn"
 config/icon="res://icon.png"
 

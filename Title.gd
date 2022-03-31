@@ -29,6 +29,11 @@ onready var bgrects:Array = [
 	$Control/VBoxContainer/Credits/ColorRect,
 	$Control/VBoxContainer/QUIT/ColorRect,	
 ]
+
+var sfx_hit = preload("res://audio/Audiospur-2.wav")
+var sfx_destroy = preload("res://audio/Audiospur-4.wav")
+var sfx_place = preload("res://audio/placepiece.wav")
+
 func wrap(s):
 	return s# "["+s+"]"
 
@@ -101,14 +106,25 @@ func _ready():
 	updateDisplay()
 	
 	
+var leaving :bool= false
+	
+const flickercount=4
+const flickerdur=0.1
 	# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if leaving:
+		return
+		
 	if Input.is_action_just_pressed("cursor_up"):
 		if Global.menuselect>0:
 			Global.menuselect = Global.menuselect - 1
+			$AudioStreamPlayer.stream = sfx_hit
+			$AudioStreamPlayer.play()
 			updateDisplay()
 	if Input.is_action_just_pressed("cursor_down"):
 		if Global.menuselect<6:		
+			$AudioStreamPlayer.stream = sfx_hit
+			$AudioStreamPlayer.play()
 			Global.menuselect = Global.menuselect + 1
 			if web and Global.menuselect==6:
 				Global.menuselect=5
@@ -134,14 +150,50 @@ func _process(delta):
 					updateDisplay()
 		3:
 			if Input.is_action_just_pressed("ui_accept"):
+				leaving=true
+				$AudioStreamPlayer.stream = sfx_place
+				$AudioStreamPlayer.play()
+				for i in 4:
+					if i%2==0:
+						$Control/VBoxContainer/Start.text=""
+					else:
+						$Control/VBoxContainer/Start.text="START"
+					yield(get_tree().create_timer(flickerdur), "timeout")
 				get_tree().change_scene("res://Pachingo.tscn")
 		4:
 			if Input.is_action_just_pressed("ui_accept"):
+				leaving=true
+				$AudioStreamPlayer.stream = sfx_place
+				$AudioStreamPlayer.play()
+				for i in flickercount:
+					if i%2==0:
+						$Control/VBoxContainer/Help.help=""
+					else:
+						$Control/VBoxContainer/Help.text="START"
+					yield(get_tree().create_timer(flickerdur), "timeout")
 				get_tree().change_scene("res://help.tscn")
 		5:
 			if Input.is_action_just_pressed("ui_accept"):
+				leaving=true
+				$AudioStreamPlayer.stream = sfx_place
+				$AudioStreamPlayer.play()
+				for i in flickercount:
+					if i%2==0:
+						$Control/VBoxContainer/Credits.help=""
+					else:
+						$Control/VBoxContainer/Credits.text="START"
+					yield(get_tree().create_timer(flickerdur), "timeout")
 				get_tree().change_scene("res://credits.tscn")
 		6:
 			if Input.is_action_just_pressed("ui_accept"):
+				leaving=true
+				$AudioStreamPlayer.stream = sfx_destroy
+				$AudioStreamPlayer.play()
+				for i in flickercount:
+					if i%2==0:
+						$Control/VBoxContainer/Credits.help=""
+					else:
+						$Control/VBoxContainer/Credits.text="START"
+					yield(get_tree().create_timer(flickerdur), "timeout")
 				get_tree().quit()
 

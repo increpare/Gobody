@@ -296,7 +296,10 @@ func board_cell_entered(node:Node,ar1,ar2):
 			markWinEdges(result[0],result[1])
 		
 		if black_captured and white_captured:
-			$CanvasLayer/Control2/WinsMessage.text="DRAW GAME"
+			if node.type==0:
+				$CanvasLayer/Control2/WinsMessage.text="WHITE WINS"
+			else:
+				$CanvasLayer/Control2/WinsMessage.text="BLACK WINS"
 		elif black_captured:
 			$CanvasLayer/Control2/WinsMessage.text="WHITE WINS"
 		elif white_captured:
@@ -359,7 +362,7 @@ func board_cell_entered(node:Node,ar1,ar2):
 					
 			unplacedstones=[]
 		
-	else:
+	else:	
 		var particles:Particles
 		if node.type==0:
 			particles = $DestroyParticles_White
