@@ -157,11 +157,10 @@ surfaces/0 = {
 "vertex_count": 2091
 }
 
-[sub_resource type="CubeMesh" id=131]
-size = Vector3( 2, 3, 3 )
+[sub_resource type="CylinderMesh" id=131]
 
-[sub_resource type="ConcavePolygonShape" id=132]
-data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+[sub_resource type="CylinderShape" id=132]
+height = 1.37689
 
 [sub_resource type="SpatialMaterial" id=129]
 render_priority = -5
@@ -1119,255 +1118,255 @@ material/0 = ExtResource( 26 )
 
 [node name="Rods" type="Spatial" parent="Board"]
 
-[node name="DiamondDart" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.27076, 0, 0, 0, 0.100972, 0, 0, 0, 0.100972, 0.0145931, 4.99029, 3.99894 )
+[node name="DiamondDart_Cylinder" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, 5.31839, 0, -0.156921, 4.01527e-07, 0, 0, 0, 0.156921, 0.0145931, 4.99029, 3.99894 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart2" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 4.99029, 1.99894 )
+[node name="DiamondDart_Cylinder2" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, 5.31839, 0, -0.156921, 4.01527e-07, 0, 0, 0, 0.156921, 0.0145931, 4.99029, 1.99894 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart2"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder2"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart2/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder2/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart3" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 4.99029, -0.00105607 )
+[node name="DiamondDart_Cylinder3" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, 5.31839, 0, -0.156921, 4.01527e-07, 0, 0, 0, 0.156921, 0.0145931, 4.99029, -0.00106012 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart3"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder3"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart3/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder3/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart4" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 4.99029, -2.00106 )
+[node name="DiamondDart_Cylinder4" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, 5.31839, 0, -0.156921, 4.01527e-07, 0, 0, 0, 0.156921, 0.0145931, 4.99029, -2.00106 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart4"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder4"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart4/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder4/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart5" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 4.99029, -4.00106 )
+[node name="DiamondDart_Cylinder5" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, 5.31839, 0, -0.156921, 4.01527e-07, 0, 0, 0, 0.156921, 0.0145931, 4.99029, -4.00106 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart5"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder5"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart5/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder5/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart6" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 2.99029, -3.00106 )
+[node name="DiamondDart_Cylinder6" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, 5.31839, 0, -0.156921, 4.01527e-07, 0, 0, 0, 0.156921, 0.0145933, 2.99029, -3.00106 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart6"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder6"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart6/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder6/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart7" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 2.99029, -1.00106 )
+[node name="DiamondDart_Cylinder7" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, 5.31839, 0, -0.156921, 4.01527e-07, 0, 0, 0, 0.156921, 0.0145933, 2.99029, -1.00106 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart7"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder7"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart7/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder7/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart8" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 2.99029, 0.998944 )
+[node name="DiamondDart_Cylinder8" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, 5.31839, 0, -0.156921, 4.01527e-07, 0, 0, 0, 0.156921, 0.0145933, 2.99029, 0.99894 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart8"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder8"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart8/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder8/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart9" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( 5.22, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0145931, 2.99029, 2.99894 )
+[node name="DiamondDart_Cylinder9" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, 5.31839, 0, -0.156921, 4.01527e-07, 0, 0, 0, 0.156921, 0.0145933, 2.99029, 2.99894 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart9"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder9"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart9/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder9/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart10" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, -0.985407, 6.99029, -0.00105583 )
+[node name="DiamondDart_Cylinder10" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, -2.32474e-07, 0.156921, -0.156921, -2.32474e-07, 1.18472e-08, 6.85922e-09, -5.31839, -6.85922e-09, -2.98541, 6.99029, -0.00105999 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart10"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder10"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart10/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder10/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart11" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, -2.98541, 6.99029, -0.00105583 )
+[node name="DiamondDart_Cylinder11" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, -2.32474e-07, 0.156921, -0.156921, -2.32474e-07, 1.18472e-08, 6.85922e-09, -5.31839, -6.85922e-09, -0.985407, 6.99029, -0.00106008 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart11"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder11"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart11/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder11/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart12" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, 1.01459, 6.99029, -0.00105583 )
+[node name="DiamondDart_Cylinder12" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, -2.32474e-07, 0.156921, -0.156921, -2.32474e-07, 1.18472e-08, 6.85922e-09, -5.31839, -6.85922e-09, 1.01459, 6.99029, -0.00106017 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart12"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder12"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart12/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder12/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart13" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, 3.01459, 6.99029, -0.00105583 )
+[node name="DiamondDart_Cylinder13" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, -2.32474e-07, 0.156921, -0.156921, -2.32474e-07, 1.18472e-08, 6.85922e-09, -5.31839, -6.85922e-09, 3.01459, 6.99029, -0.00106025 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart13"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder13"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart13/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder13/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart14" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, 4.01459, 8.99029, -0.00105583 )
+[node name="DiamondDart_Cylinder14" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, -2.32474e-07, 0.156921, -0.156921, -2.32474e-07, 1.18472e-08, 6.85922e-09, -5.31839, -6.85922e-09, 4.01459, 8.99029, -0.00106039 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart14"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder14"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart14/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder14/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart15" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, 2.01459, 8.99029, -0.00105583 )
+[node name="DiamondDart_Cylinder15" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, -2.32474e-07, 0.156921, -0.156921, -2.32474e-07, 1.18472e-08, 6.85922e-09, -5.31839, -6.85922e-09, 2.01459, 8.99029, -0.0010603 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart15"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder15"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart15/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder15/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart16" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, 0.0145931, 8.99029, -0.00105583 )
+[node name="DiamondDart_Cylinder16" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, -2.32474e-07, 0.156921, -0.156921, -2.32474e-07, 1.18472e-08, 6.85922e-09, -5.31839, -6.85922e-09, 0.0145926, 8.99029, -0.00106021 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart16"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder16"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart16/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder16/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart17" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, -1.98541, 8.99029, -0.00105583 )
+[node name="DiamondDart_Cylinder17" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, -2.32474e-07, 0.156921, -0.156921, -2.32474e-07, 1.18472e-08, 6.85922e-09, -5.31839, -6.85922e-09, -1.98541, 8.99029, -0.00106012 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart17"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder17"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart17/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder17/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
-[node name="DiamondDart18" type="MeshInstance" parent="Board/Rods"]
-transform = Transform( -2.28173e-07, 0, -0.1, 0, 0.1, 0, 5.22, 0, -4.37114e-09, -3.98541, 8.99029, -0.00105583 )
+[node name="DiamondDart_Cylinder18" type="MeshInstance" parent="Board/Rods"]
+transform = Transform( 1.18472e-08, -2.32474e-07, 0.156921, -0.156921, -2.32474e-07, 1.18472e-08, 6.85922e-09, -5.31839, -6.85922e-09, -3.98541, 8.99029, -0.00106004 )
 layers = 2
 mesh = SubResource( 131 )
 skeleton = NodePath("")
 material/0 = ExtResource( 7 )
 
-[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart18"]
+[node name="StaticBody" type="StaticBody" parent="Board/Rods/DiamondDart_Cylinder18"]
 physics_material_override = ExtResource( 19 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart18/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Board/Rods/DiamondDart_Cylinder18/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 shape = SubResource( 132 )
 
